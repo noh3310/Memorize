@@ -33,7 +33,6 @@ struct CardView: View {
         ZStack {
             let shape = RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
             if isFaceUp {
-                
                 shape.fill().foregroundColor(.white)
                 shape.strokeBorder(lineWidth: 3)
                 Text(content).font(.largeTitle)
