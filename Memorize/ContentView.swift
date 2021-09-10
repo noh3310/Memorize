@@ -38,6 +38,9 @@ struct CardView: View {
                 shape.strokeBorder(lineWidth: 3)
                 Text(card.content).font(.largeTitle)
             }
+            else if card.isMatching {
+                shape.opacity(0)
+            }
             else {
                 shape.foregroundColor(.red)
             }
